@@ -108,3 +108,7 @@
   border-radius: 100%;
   background: #202020;
 }
+
+.wide {
+  max-width: 69rem;
+}

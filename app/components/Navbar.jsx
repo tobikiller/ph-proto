@@ -76,7 +76,7 @@ const Navbar = () => {
               : "max-w-full mx-auto px-7 lg:px-20 py-4 flex justify-between items-center transition-all duration-300  delay-200"
           } ${
             scroll
-              ? " max-w-6xl md:rounded-full mx-auto px-20 py-4 flex justify-between items-center drop-shadow-lg shadow-2xl shadow-orange-200  bg-light-yellow transition-all duration-300  delay-200"
+              ? " wide md:rounded-full mx-auto px-20 py-4 flex justify-between items-center drop-shadow-lg shadow-2xl shadow-orange-200  bg-light-yellow transition-all duration-300  delay-200"
               : "max-w-full mx-auto px-20 py-4 flex justify-between items-center"
           }`}
         >
