@@ -59,10 +59,12 @@ const Navbar = () => {
       </div>
 
       <div
-        className={` ${beforescroll ? "-top-[0.5px]" : ""} ${
+        className={` ${
+          beforescroll ? "  fixed lg:-top-[0.5px]" : " fixed top-10"
+        } ${
           scroll
-            ? "  fixed w-full    overflow-auto pt-5  z-40 h-[200px] "
-            : "pt-2  fixed w-full   overflow-auto top-12 h-[200px] "
+            ? "  fixed w-full    overflow-auto lg:pt-5  z-40 lg:h-[200px] "
+            : "pt-2  fixed w-full  overflow-auto lg:top-12 lg:h-[200px] "
         }`}
       >
         <ul
@@ -74,7 +76,7 @@ const Navbar = () => {
               : "max-w-full mx-auto px-7 lg:px-20 py-4 flex justify-between items-center transition-all duration-300  delay-200"
           } ${
             scroll
-              ? " max-w-[1270px] md:rounded-full mx-auto px-20 py-4 flex justify-between items-center drop-shadow-lg shadow-2xl shadow-orange-200  bg-light-yellow transition-all duration-300  delay-200"
+              ? " max-w-6xl md:rounded-full mx-auto px-20 py-4 flex justify-between items-center drop-shadow-lg shadow-2xl shadow-orange-200  bg-light-yellow transition-all duration-300  delay-200"
               : "max-w-full mx-auto px-20 py-4 flex justify-between items-center"
           }`}
         >
