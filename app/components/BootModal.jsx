@@ -23,7 +23,7 @@ const BootModal = () => {
         <div
           className={` ${
             message
-              ? "bg-light-yellow text-black duration-700 delay-200 h-max p-5 rounded-lg flex opacity-1 justify-start w-[200px] mr-3"
+              ? "bg-light-yellow text-black duration-700 delay-200 h-max p-5 rounded-lg flex opacity-1 shadow-xl shadow-hunyadi-yellow justify-start w-[200px] mr-3"
               : " duration-100 delay-150 p-0 rounded-none h-0 opacity-0   justify-start  mr-0"
           }`}
         >
@@ -47,7 +47,7 @@ const BootModal = () => {
           >
             <img src="/assets/icons/smart_toy.png" alt="bots" />
           </div>
-          <p className=" font-loryena uppercase text-center text-jet">
+          <p className=" font-loryena font-bold uppercase text-center text-jet">
             jc bots
           </p>
         </div>
