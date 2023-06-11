@@ -1,7 +1,5 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Head from "next/head";
-0;
 
 export const metadata = {
   title: "JC PRESTIGE HOTEL",
@@ -11,7 +9,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head></Head>
       <body className="bg-light-yellow">
         <Navbar className="" />
         <main className="">{children}</main>
