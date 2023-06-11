@@ -116,3 +116,7 @@
 .top {
   top: 0px;
 }
+
+path {
+  fill: white;
+}

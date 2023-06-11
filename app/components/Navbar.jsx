@@ -157,7 +157,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className="btn space-y-1 block lg:hidden"
+            className="btn space-y-1  hidden"
             onClick={() => setNavActive(!navActive)}
           >
             <div className="w-7 h-0.5 bg-light-yellow"></div>
