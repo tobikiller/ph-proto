@@ -26,11 +26,6 @@
   background-size: cover;
 }
 
-.header {
-  top: 20px;
-  position: absolute;
-}
-
 .dot {
   position: relative;
   display: inline-block;
@@ -112,27 +107,4 @@
   height: 4px;
   border-radius: 100%;
   background: #202020;
-}
-
-.nav__menu-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  width: 288px;
-  row-gap: 24px;
-  right: -288px;
-  padding: 24px 16px;
-  transition: all 0.2s;
-  min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
-}
-
-.nav__menu-list.active {
-  right: 0;
-}
-
-.overlay-close {
-  visibility: visible;
-  left: 0;
 }
