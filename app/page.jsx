@@ -40,7 +40,7 @@ const page = () => {
         <section className="max-w-7xl mx-auto relative mt-14 px-7 space-y-7">
           <div className="grid place-content-centers place-items-center space-y-5">
             <div className="dot flex">
-              <img src="/assets/icons/isolation_mode.svg" alt="iso" />
+              <img src="/assets/icons/isolationmode.svg" alt="iso" />
             </div>
             <h2 className="  font-PlayfairDisplay uppercase text-xl sm:text-5xl md:text-6xl text-jet text-center">
               BIENVENUE SUR LE SITE DE L'HOTEL JC PRESTIGE
