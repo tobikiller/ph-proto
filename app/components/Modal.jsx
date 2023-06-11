@@ -1,4 +1,5 @@
-const Modal = (props) => {
+const Modal = ({ isVisible, onClose }) => {
+  if (!isVisible) return null;
   return (
     <div
       class="relative z-10"
@@ -16,9 +17,9 @@ const Modal = (props) => {
         From: "opacity-100"
         To: "opacity-0"
     --> */}
-      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity duration-1000 "></div>
 
-      <div class="fixed inset-0 z-10 overflow-y-auto">
+      <div class="fixed inset-0 z-10 overflow-y-auto" onClick={() => onClose()}>
         <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           {/* <!--
           Modal panel, show/hide based on modal state.
@@ -70,6 +71,7 @@ const Modal = (props) => {
               <button
                 type="button"
                 class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                onClick={() => onClose()}
               >
                 Deactivate
               </button>

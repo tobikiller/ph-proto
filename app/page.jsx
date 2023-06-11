@@ -3,15 +3,15 @@
 import { Carousel } from "@mantine/carousel";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import { useState } from "react";
-import Modal from "./components/Modal";
+// import { useState } from "react";
+// import Modal from "./components/Modal";
 
 const page = () => {
-  const [activeModal, setActiveModal] = useState(false);
+  // const [activeModal, setActiveModal] = useState(false);
 
   return (
     <>
-      {activeModal ? <Modal setActiveModal={setActiveModal} /> : null}
+      {/* <Modal isVisible={activeModal} onClose={() => setActiveModal(false)} /> */}
       <div className="">
         <div className=" gradient w-full h-screen ">
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -62,10 +62,10 @@ const page = () => {
               ]}
             >
               <Carousel.Slide
-                onClick={() => setActiveModal(true)}
+                // onClick={() => setActiveModal(true)}
                 className="h-full w-[350px] "
               >
-                <div className=" bg-black bg-center bg-cover bg-no-repeat rounded-xl w-full h-full">
+                <div className=" bg-guest-room bg-center bg-cover bg-no-repeat rounded-xl w-full h-full">
                   <div className="relative w-full h-full flex justify-center items-end pb-4">
                     <div className="  text-center ">
                       <p className="font-PlayfairDisplay text-light-yellow uppercase ">
