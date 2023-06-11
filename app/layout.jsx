@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head></Head>
-      <body className="bg-light-yellow">
+      <body className="bg-light-yellow ">
         <Navbar className="" />
         <main className="">{children}</main>
       </body>
