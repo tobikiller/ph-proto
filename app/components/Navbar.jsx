@@ -10,15 +10,16 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setBeforeScroll(window.scrollY > 40);
+      setBeforeScroll(window.scrollY > 10);
     });
   });
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 100);
+      setScroll(window.scrollY > 200);
     });
   });
+
   const links = [
     {
       id: 0,
@@ -59,12 +60,10 @@ const Navbar = () => {
       </div>
 
       <div
-        className={` ${
-          beforescroll ? "  fixed lg:-top-[0.5px]" : " fixed top-10"
-        } ${
+        className={` ${beforescroll ? " top  " : " fixed top-10"} ${
           scroll
-            ? "  fixed w-full    overflow-auto lg:pt-5  z-40 lg:h-[200px] "
-            : "pt-2  fixed w-full  overflow-auto lg:top-12 lg:h-[200px] "
+            ? "  fixed w-full    overflow-auto lg:pt-5 top-10 z-40 lg:h-[200px] "
+            : "pt-2  fixed w-full top-10  overflow-auto lg:top-12 lg:h-[200px] "
         }`}
       >
         <ul

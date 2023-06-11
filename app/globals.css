@@ -112,3 +112,7 @@
 .wide {
   max-width: 69rem;
 }
+
+.top {
+  top: 0px;
+}
